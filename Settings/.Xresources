@@ -1,0 +1,81 @@
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+XTerm*background: #2b2b2b
+XTerm*foreground: #e7e7e7
+XTerm*pointerColor: #16A085
+XTerm*faceName: Fixed
+XTerm*faceSize: 11
+
+urxvt*font:                 xft:xos4 Terminus:size=12
+
+urxvt*termName:             rxvt
+urxvt*background:           #33393b
+urxvt*foreground:           white
+urxvt*scrollBar:            false
+urxvt.geometry:             160x50
+URxvt.perl-ext-common:      default,matcher
+URxvt.url-launcher:         /usr/bin/xdg-open
+URxvt.matcher.button:       1
+
+Xft*dpi:                    96
+Xft*antialias:              true
+Xft*hinting:                true
+Xft*hintstyle:              hintfull
+Xft*rgba:                   rgb
+
+!URxvt*transparent:          true
+!URxvt*shading: 30
+
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0200/c800
+
+URxvt.tintColor:            #54487a
+URxvt.shading:              100
+URxvt.inheritPixmap:        false
+URxvt.fading:               100
+
+URxvt.saveLines:            50000
+URxvt.cursorBlink:          1
+
+URxvt*scrollTtyOutput: 	    false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
+URxvt*color0:      	        #000000
+URxvt*color8:      	        #666666
+
+URxvt*color1:               #9e1828
+URxvt*color9:      	        #cf6171
+
+URxvt*color2:      	        #aece92
+URxvt*color10:     	        #c5f779
+
+URxvt*color3:      	        #968a38
+URxvt*color11:     	        #fff796
+
+URxvt*color4:      	        #414171
+URxvt*color12:     	        #4186be
+
+URxvt*color5:      	        #963c59
+URxvt*color13:     	        #cf9ebe
+
+URxvt*color6:      	        #418179
+URxvt*color14:     	        #71bebe
+
+URxvt*color7:      	        #bebebe
+URxvt*color15:     	        #ffffff
