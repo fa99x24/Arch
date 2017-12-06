@@ -4,13 +4,19 @@
 # Path to your oh-my-zsh installation.
   export ZSH=/home/thomas/.oh-my-zsh
 
-export TERM="xterm-256color"
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="zsh-theme-powerlevel9k/powerlevel9k"
-  ZSH_THEME="cobalt2"
+# ZSH_THEME="random"
+# ZSH_THEME="cobalt2"
+  ZSH_THEME="random"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,10 +60,12 @@ export TERM="xterm-256color"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-completions)
+plugins=(
+  git tmux zsh-completions zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
-
+. /usr/share/z/z.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
