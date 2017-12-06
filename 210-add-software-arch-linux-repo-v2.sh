@@ -28,6 +28,8 @@ echo "Installing category Graphics"
 
 echo "Installing category Internet"
 sudo pacman -S --noconfirm --needed qutebrowser
+sudo pacman -S --noconfirm --needed teamviewer13
+
 #sudo pacman -S --noconfirm --needed
 
 echo "Installing category Multimedia"
