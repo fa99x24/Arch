@@ -133,8 +133,6 @@ sudo pacman -S --noconfirm --needed unclutter
 sudo pacman -S --noconfirm --needed rxvt-unicode
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 
-
-sudo pacman -S ranger --noconfirm --needed
 #sudo pacman -S --noconfirm --needed
 
 
