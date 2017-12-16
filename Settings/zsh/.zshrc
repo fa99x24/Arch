@@ -9,7 +9,7 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="random"
 # ZSH_THEME="cobalt2"
-  ZSH_THEME="random"
+  ZSH_THEME="dracula"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,7 +61,7 @@
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git tmux zsh-completions zsh-autosuggestions
+  git tmux zsh-completions zsh-autosuggestions z extract
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,3 +94,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+alias ls='ls --color=auto'
+alias mirror="sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist"
+alias mirrors=mirror
+
+# yaourt keeps tmp folder cleaner than packer
+alias pks="yaourt -S --noconfirm "
+alias pksyu="yaourt -Syu --noconfirm"
+alias pksyua="yaourt -Syu  --aur --noconfirm"
+
+alias eZ='vim ~/.zshrc'
+alias vi='vim'
+alias e='vim'
