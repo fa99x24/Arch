@@ -40,8 +40,8 @@ sh AUR/install-font-manager-v*.sh
 echo "Installing category Internet"
 
 sh AUR/install-dropbox-v*.sh
-sh AUR/install-insync-v*.sh
-sh AUR/install-skypeforlinux-bin-v*.sh
+#sh AUR/install-insync-v*.sh
+#sh AUR/install-skypeforlinux-bin-v*.sh
 sh AUR/install-vivaldi-v*.sh
 
 
@@ -50,7 +50,7 @@ echo "Installing category Multimedia"
 sh AUR/install-gradio-v*.sh
 sh AUR/install-peek-v*.sh
 sh AUR/install-radiotray-v*.sh
-sh AUR/install-spotify-v*.sh
+#sh AUR/install-spotify-v*.sh
 
 
 echo "Installing category Office"
